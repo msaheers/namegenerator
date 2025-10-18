@@ -1,0 +1,138 @@
+/* Body and container */
+body {
+  background-color: #000000; /* dark mode background */
+  color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Card styles */
+.card {
+  background-color: #1a1a1a;
+  border: 2px solid #00fff7;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 20px #00fff7;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 0 40px #ff00ff, 0 0 20px #00fff7;
+  transform: translateY(-5px);
+}
+
+/* Buttons */
+button {
+  background: linear-gradient(90deg, #ff00ff, #00fff7);
+  border: none;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #ff00ff, 0 0 10px #00fff7;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  box-shadow: 0 0 20px #ff00ff, 0 0 20px #00fff7;
+  transform: scale(1.05);
+}
+
+/* Inputs */
+input {
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 2px solid #00fff7;
+  margin-right: 0.5rem;
+  background-color: #0f0f0f;
+  color: #fff;
+  outline: none;
+}
+
+input:focus {
+  border-color: #ff00ff;
+  box-shadow: 0 0 10px #ff00ff;
+}
+
+/* Neon text */
+h1, h2, h3 {
+  text-shadow: 0 0 5px #00fff7, 0 0 10px #ff00ff;
+}
+
+ul li {
+  padding: 0.2rem 0;
+  text-shadow: 0 0 3px #00fff7;
+}
+
+@keyframes neonPulse {
+  0%, 100% { text-shadow: 0 0 5px #00fff7, 0 0 10px #ff00ff; }
+  50% { text-shadow: 0 0 20px #00fff7, 0 0 30px #ff00ff; }
+}
+
+h1 {
+  animation: neonPulse 1.5s infinite alternate;
+}
+
+button {
+  background-color: #1f1f1f;
+  color: #0f1010;
+  border: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  margin: 5px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+button:hover {
+  background-color: #5d00ff;
+  color: #000;
+}
+
+/* 🔥 Background Video Styling */
+#background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+  opacity: 0.4; /* adjust for brightness */
+}
+
+/* Optional dark overlay for text readability */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(11, 11, 11, 0.363);
+  z-index: -1;
+}
+
+/* ✨ Content Styling */
+.App {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-top: 20px;
+  text-shadow: 0 0 10px #00ffe5, 0 0 20px #00b3a4;
+}
+
